@@ -145,4 +145,49 @@ section {
   line-height: 1.8;
 }
 
+.menu .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.menu .box-container .box {
+  text-align: center;
+  color: var(--withe);
+  border: var(--border);
+  padding: 5rem;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+.menu .box-container .box:hover {
+  background-color: var(--withe);
+  transition: 1s linear;
+}
+
+.menu .box-container .box:hover>* { /*Obs: Se não funcionar este código css deve ser colocado no final da página*/
+  color: var(--bg);
+}
+
+.menu .box-container .box img {
+  height: 10rem;
+}
+
+.menu .box-container .box h3 {
+  color: var(--withe);
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+.menu .box-container .price {
+  color: var(--withe);
+  font-size: 2.5rem;
+  padding: .5rem 0;
+  
+}
+
+.menu .box-container .price span{
+  font-size: 1.5rem;
+  text-decoration: line-through;
+  font-weight: lighter;
+}
+
  
